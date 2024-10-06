@@ -4,7 +4,7 @@ import { Signin } from './pages/Signin'
 import { Blog } from './pages/Blog'
 import { Blogs } from "./pages/Blogs";
 import { Publish } from './pages/Publish';
-import { Landing } from './pages/Rename';
+import { Landing } from './pages/Landing';
 
 function App() {
 
