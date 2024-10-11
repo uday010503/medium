@@ -1,9 +1,13 @@
-import { Appbar } from "../components/Appbar"
-
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom"
 
 export const Landing = () => {
-    return <div>
-        <Appbar/>
-        Landing Page
-    </div>
+    const navigate = useNavigate();
+    const token = localStorage.getItem("token");
+    const nav = ()=>{
+        token?navigate("/blogs"):navigate("/signin")
+    }
+    useEffect(()=>{
+        nav();
+    },[])
 }
