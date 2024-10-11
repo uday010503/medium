@@ -10,4 +10,5 @@ export const Landing = () => {
     useEffect(()=>{
         nav();
     },[])
+    return(<div></div>)
 }
